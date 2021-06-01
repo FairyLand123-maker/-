@@ -1,0 +1,56 @@
+<!--page/home.wxml-->
+<view class="home" style="height:100px;">
+  <view class="find">
+   <view class="findItem">
+    <!-- <view class="icon iconfont icon-sousuo"></view> -->
+    <input type="text" placeholder="请输入搜索信息" placeholder-style="font-size:30rpx;"
+    value='{{search_name}}'  bindinput='forSearchId'
+    confirm-type="search"/>  
+    <view  bindtap='ss' class="icon iconfont icon-sousuo" 
+      data-flag="{{one}}"></view>  
+   </view >
+   
+    <view bindtap="to_search" class="icon iconfont icon-liebiao"></view> 
+  </view>
+  <swiperImg></swiperImg>
+  <view class="nav">
+    <view class="navItem" bindtap="to_jiaocaijiaofu">
+      <view class="icon iconfont icon-xueshimaoxuexibiye"></view>
+      <text>教材教辅</text>
+    </view>
+    <view class="navItem" bindtap="to_wenxue">
+      <view class="icon iconfont icon-book"></view>
+      <text>文学小说</text>
+    </view>
+    <view class="navItem"  bindtap="to_biji">
+      <view class="icon iconfont icon-biji" ></view>
+      <text>个人笔记</text>
+    </view>
+    <view class="navItem"  bindtap="nav_quanbufenlei">
+      <view class="icon iconfont icon-fenlei-"></view>
+      <text>全部分类</text>
+    </view>
+  </view>
+
+  <view class="nav_one" bindtap="to_book">
+    <text>热搜图书</text>
+    <image src="../../images/home/tushuzhuanqu.jpg"></image>
+  </view>
+  <view class="nav_two" bindtap="to_active">
+   <view class="one">
+    <text>活动宣传</text>
+    <image src="../../images/home/huodongxuanchuan.jpg"></image>
+   </view>
+   <view class="two" bindtap="to_jifen">
+    <text>获取积分</text>
+    <image src="../../images/home/huoqujifen.jpg"></image>
+   </view>
+  </view>
+  <view class="spaceWord">热门笔记</view>
+  <note   one2="{{one2}}"
+   data-one2="{{one2}}"
+   author="{{author}}"
+   data-author="{{author}}"
+   bindtap="to_details"
+    bindmyevent="b_m"></note>
+</view>

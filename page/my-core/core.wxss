@@ -1,0 +1,80 @@
+/* page/my-core/core.wxss */
+.header{
+  width: 100%;
+  height: 85rpx;
+  background-color: #de7d2c;
+  border-radius: 0 0 80rpx 80rpx;
+}
+.user{
+  margin: 20rpx auto;
+  width: 80%;
+  height: 150rpx;
+  background-color: #de7d2c;
+  opacity: 0.9;
+  border-radius: 40rpx;
+  box-shadow: 3px 3px 30px #888888;
+}
+.user .text{
+  padding-top: 20rpx;
+  display: block;
+  text-align: center;
+  line-height: 100%;
+  font-size: 35rpx;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: black;
+}
+.coin .text2{
+  display: block;
+  padding-top: 30rpx;
+  text-align: center;
+  line-height: 100%;
+}
+.second{
+  width: 85%;
+    margin: auto;
+    background: antiquewhite;
+    margin-top: 69rpx;
+    /* height: 304rpx; */
+    border-radius: 23rpx;
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+    padding-bottom: 25rpx;
+    margin-bottom: 41rpx;
+}
+.r{
+  text-align: center;
+  margin-top: 76rpx;
+  width: 85%;
+  margin: auto;
+  margin-top: 76rpx;
+}
+.mi{
+  text-align: center;
+    font-size: 16px;
+}
+.content text{
+  display: block;
+  font-size: 13px;
+  margin: 12rpx;
+}
+.renwu{
+  width: 90%;
+  margin: auto;
+  background: white;
+  margin-top: 12px;
+  border-radius: 20rpx;
+}
+.one{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .one button{
+    width: 30%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 16px;
+  }

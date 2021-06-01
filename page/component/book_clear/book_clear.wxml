@@ -1,0 +1,8 @@
+<view class="v1" >
+ <view wx:for="{{one4_2}}" 
+ wx:key="index"
+    data-index="{{index}}">
+    <view wx:if="{{one4_2.length>index}}"> {{index+4}}</view>
+    <!-- <view wx:if="{{one4_2.length==index+1}}"> {{index+5}}</view> -->
+ </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "热搜图书",
+  "usingComponents": {
+    "book":"../../component/book/book",
+    "book_clear":"../../component/book_clear/book_clear"
+  }
+}

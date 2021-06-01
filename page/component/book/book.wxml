@@ -1,0 +1,33 @@
+<view>
+<view class="box" 
+      wx:for="{{one}}"
+      wx:key="{{index}}"
+      data-index="{{index}}"  bindtap="handleTap">
+    <view class="left">
+      <image src="{{item.imageUrl}}"></image>
+    </view>
+    <view class="right">
+     <view class="one">
+      <view class="title">{{item.name}}</view>
+      <view class="icon iconfont icon-renzheng"></view>
+     </view>
+    <view class="two_summay">{{item.detail}}</view>
+    <view class="three">
+      <view  class="icon iconfont icon-shuqianbookmark11" style="font-size:17px;"></view>
+      <view class="new_old">{{item.appearance}}</view>
+    </view>
+    <view class="four">
+      <!-- <view class="icon iconfont icon-mendianziqu" style="font-size:17px;"></view> -->
+      <view class="support">支持自提</view>
+    </view>
+    <view class="five">
+      <view class="add_cate">￥{{item.currentPrice}}</view>
+      <!-- <view class="add_cate">
+        <view class="icon iconfont icon-jiarugouwuche" style="color:#ed7d2c;font-size: 21px;"
+       bindtap="to_shopping" ></view>
+      </view> -->
+    </view>
+    </view>
+</view>
+
+</view> 

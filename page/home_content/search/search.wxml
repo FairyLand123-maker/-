@@ -1,0 +1,40 @@
+<view>
+  <view class="searchTop">
+    <view class="searchTopBox">
+      <view class="icon iconfont icon-sousuo"></view>
+      <input type="text" placeholder="请输入搜索信息" placeholder-style="font-size:30rpx;"
+      value='{{search_name}}'  bindinput='forSearchId'
+      confirm-type="search"
+      />    
+      <button  bindtap='ss' style="margin-right:2rpx;/*margin-top:-22rpx*/height:61rpx;font-size:35rpx;line-height:61rpx;/*border-radius:15rpx*/"
+      data-flag="{{ one }}">搜索</button>
+    </view>
+  </view>
+  <view class="history">
+    <view class="searchTitle">
+      历史搜索
+    </view>
+    <view class="historyList">
+      <view  class="historyItem" 
+      wx:for="{{history}}"
+      wx:key="index"
+          data-index="{{index}}">
+        {{item}} 
+      </view>
+		</view>
+  </view>
+  <view class="history">
+			<view class="searchTitle">
+			热门搜索
+      </view>
+			<view class="historyList">
+        <view class="historyItem"
+        wx:for="{{hotlist}}"
+        wx:key="index"
+        wx:for-item="nextindex"
+        data-index="{{index}}" >
+        {{nextindex}}
+        </view>
+			</view>
+		</view>
+</view>

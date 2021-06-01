@@ -1,0 +1,150 @@
+@import '../../common/common.wxss';
+.header{
+    position: relative;
+    height: 160rpx;
+    line-height: 100rpx;
+    padding:30rpx 30rpx 30rpx 150rpx;
+    box-sizing: border-box;
+    border-radius: 0 0 120rpx 120rpx;
+    background: #de7d2c;
+    font-size: 28rpx;
+    color: #fff;
+}
+.header .thumb{
+    position: absolute;
+    left: 30rpx;
+    top: 30rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.header .about{
+    float: right;
+}
+.btn-container {
+    padding: 10rpx 24rpx;
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    height: 52px;
+}
+
+.icon-wrap {
+    width: 29%;
+    text-align: center;
+    display: inline-block;
+}
+
+.order-icon-wrap {
+    position: relative;
+}
+
+.order-icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 auto;
+    position: relative;
+}
+
+.order-txt {
+    font-size: 26rpx;
+    color: #666;
+}
+
+/* 收获地址 */
+.address-box{
+    border-bottom:1rpx solid #ededed;
+    color: #000;
+    line-height: 90rpx;
+    font-size: 28rpx;
+}
+.address-box .address-manage{
+    position: relative;
+    height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+    text-indent: 5em;
+}
+.address-box .address-manage::after,.information .personal::after,
+.orders-box .orders::after,.rules::after{
+    position: absolute;
+    right: 30rpx;
+    top: 34rpx;
+    content: '';
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 4rpx solid #7f7f7f;
+    border-right: 4rpx solid #7f7f7f;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.address-box .address-list{
+    padding-left: 30rpx;
+}
+.address-box .address-list view{
+    height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+}
+.address-box .address-list view:last-child{
+    border-bottom: 0;
+}
+/* 我的订单 */
+.orders-box{
+    border-bottom:1rpx solid #ededed;
+    color: #000;
+    line-height: 90rpx;
+    font-size: 28rpx;
+}
+.orders{
+    position: relative;
+    height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+    text-indent: 5em;
+}
+/* 个人信息 客服 规则*/
+.information{
+    color: #000;
+    font-size: 28rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+    text-indent: 5em;
+    position: relative;
+}
+.center-box,.rule-box{
+    border-bottom:1rpx solid #ededed;
+    color: #000;
+    line-height: 90rpx;
+    font-size: 28rpx;  
+}
+.rules{
+    position: relative;
+    height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+    text-indent: 5em;
+}
+.center{
+    position: relative;
+    height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+    text-align: center;
+}
+.contact-btn {
+    background: #fff;
+    border-radius: 0;
+}
+.nav{
+    width: 90%;
+    /* background: pink; */
+    text-align: start;
+    text-indent: 3em;
+    font-size: 13px;
+}
+.address-manage,.information,.orders-box,.rule-box{
+    width: 90%;
+}
+navigator{
+    margin-top: 8px;
+}
+.icon iconfont{
+    font-size: 21px;
+}

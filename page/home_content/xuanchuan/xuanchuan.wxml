@@ -1,0 +1,39 @@
+<view>
+  <view class="name">宣传中心</view>
+  <view class="content">
+    <view class="one">
+    <view wx:if="{{open==false}}">2021-5-20：图书展示活动-2号教学楼</view>
+    <view  wx:if="{{open==true}}">2021-05-20---13：00-19：00：2号教学楼门前将举办图书展示活动，欢迎前来了解。</view>
+    <view wx:if="{{open==false}}">
+      <view class="icon iconfont icon-you" bindtap="touch"></view>
+    </view>
+    <view wx:if="{{open==true}}">
+      <view class="icon iconfont icon-xia" bindtap="touch"></view>
+    </view>
+    
+  </view>
+  <view class="second">
+    <view wx:if="{{open1==false}}">2021-5-21：积分翻倍活动-平台</view>
+    <view  wx:if="{{open1==true}}">2021-05-24---9：00-22：00：平台将举办积分翻倍活动，积分多多，优惠慢慢，敬请期待。</view>
+    <view wx:if="{{open1==false}}">
+      <view class="icon iconfont icon-you" bindtap="touch1"></view>
+    </view>
+    <view wx:if="{{open1==true}}">
+      <view class="icon iconfont icon-xia" bindtap="touch1"></view>
+    </view>
+  </view>
+  <view class="three">
+    <view wx:if="{{open2==false}}">2021-5-25：图书置换活动-1号教学楼</view>
+    <view  wx:if="{{open2==true}}">2021-05-25---14：00-22：00：1号教学楼门前将举办图书置换线下咨询活动，欢迎前来了解。</view>
+    <view wx:if="{{open2==false}}">
+      <view class="icon iconfont icon-you" bindtap="touch2"></view>
+    </view>
+    <view wx:if="{{open2==true}}">
+      <view class="icon iconfont icon-xia" bindtap="touch2"></view>
+    </view>
+   
+  </view>
+
+  </view>
+  <button>联系客服</button>
+</view>

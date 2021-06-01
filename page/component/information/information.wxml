@@ -1,0 +1,16 @@
+<view class="main">
+    <view class="header">
+        <image src="{{thumb}}" class="thumb"></image>
+    </view>
+    <view class="form-box">
+        <form bindsubmit="formSubmit">
+            <input value="{{address.name}}" name="name" placeholder="昵称"/>
+            <input type="number" name="phone" value="{{address.phone}}" placeholder="个性签名"/>
+            <input name="detail" value="{{address.detail}}" placeholder="手机号"/>
+            <input name="detail" value="{{address.detail}}" placeholder="邮箱"/>
+            <view class="student">
+                <navigator class="student-check">学生认证</navigator>
+            </view>
+        </form>
+    </view>
+</view>

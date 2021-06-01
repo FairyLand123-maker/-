@@ -1,0 +1,92 @@
+{
+  "pages": [
+    "page/login/login",
+    "page/home/home",
+    "page/zhuce/zhuce",
+    "page/u_infor/u_infor",
+    "page/home_content/hot_search/hot_search",
+    "page/u_address/u_address",
+    "page/u_newaddress/u_newaddress",
+    "page/u_orderlist/u_orderlist",
+    "page/u_rules/u_rules",
+    "page/sell_content/sell_information/sell_information",
+    "page/sell/sell",
+    "page/user/user",
+    "page/u_saling/u_saling",
+    "page/u_saled/u_saled",
+    "page/my-core/core",
+    "page/home_content/active/active",
+    "page/sell_content/success_next/success_next",
+    "page/sell_content/price/price",
+    "page/home_content/search/search",
+    "page/home_content/xuanchuan/xuanchuan",
+    "page/cart/cart",
+    "page/home_content/all_fenlei/all_fenlei",
+    "page/home_content/some_fenlei/some_fenlei",
+    "page/component/swiperImg/swiperImg",
+    "page/component/note/note",
+    "page/component/book/book",
+    "page/component/address/address",
+    "page/component/orders/orders",
+    "page/component/details/details",
+    "page/component/information/information",
+    "page/home_content/details_home/details_home",
+    "page/home_content/details_search/details_search",
+    "page/home_content/details_search_list/details_search_list",
+    "page/login_home/login_home",
+    "page/component/book_clear/book_clear",
+    "page/component/check/check",
+    "page/component/book_shang/book_shang",
+    "page/component/book_xia/book_xia",
+    "page/c_orders/c_orders",
+  
+    "page/yanzheng/yanzheng"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#de7d2c",
+    "navigationBarTitleText": "助梦图书",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#de7d2c",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "page/home/home",
+        "text": "主页",
+        "iconPath": "images/bar/首页.png",
+        "selectedIconPath": "images/bar/首页选中.png"
+      },
+      {
+        "pagePath": "page/sell/sell",
+        "text": "售书",
+        "iconPath": "images/bar/书城.png",
+        "selectedIconPath": "images/bar/书城选中.png"
+      },
+      {
+        "pagePath": "page/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/bar/购物车.png",
+        "selectedIconPath": "images/bar/购物车选中.png"
+      },
+      {
+        "pagePath": "page/user/user",
+        "text": "我的",
+        "iconPath": "images/bar/我的.png",
+        "selectedIconPath": "images/bar/我的选中.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

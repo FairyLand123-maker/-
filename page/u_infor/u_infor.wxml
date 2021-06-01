@@ -1,0 +1,43 @@
+<view>
+    <view class="main">
+    <view class="header"  bindtap="add_img">
+        <view wx:if="{{add==true}}" class="thumb">
+        <image src="{{infor.avatar}}"></image>
+      </view>
+      <view wx:if="{{add==false}}" class="thumb">
+        <image src="../../images/bar/my.png" class="thumb"></image>
+      </view>
+    </view>
+    <view class="form-box">
+        <form>
+          <view class="student">
+                <view class="student-check"
+              bindtap="isright"
+              isStudent="{{isStudent}}"
+     data-isStudent="{{isStudent}}" 
+     nickname="{{nickname}}"
+     data-nickname="{{nickname}}" 
+     email="{{email}}"
+     data-email="{{email}}" 
+              >学生认证</view>
+            </view>
+            <input 
+            placeholder="昵称"
+            value='{{nickname}}'  
+            bindinput='formName'/>
+            <!-- <input 
+            bindinput='form_signature'
+            value="{{signature}}" 
+             placeholder="个性签名"/>-->
+            <input 
+            bindinput='form_email'
+            value="{{email}}"
+            placeholder="邮箱"/>
+           
+        </form>
+    </view>
+</view>
+<view  class="footer">
+    <view bindtap="right" data-image="{{image}}">确认修改</view>
+</view>
+</view>

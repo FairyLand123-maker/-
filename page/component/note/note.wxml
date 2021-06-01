@@ -1,0 +1,30 @@
+<view>
+      <view class="note"
+      wx:for="{{one2}}"
+          wx:for-item="cell" 
+          wx:for-index="cellindex"
+         
+      data-index="{{cellindex}}" 
+          bindtap="handleTap">
+    <view class="noteItem" >
+      <view class="list_one" wx:for="{{author}}"
+wx:for-index="index" wx:if="{{index==cellindex}}">
+        <image class="userInfo  icon iconfont icon-touxiang" src="{{item.avatar}}"></image>
+        <text class="userName">{{item.nickname}}</text>
+        <view class="number"><text>{{cell.postage}}</text>次下载</view>
+        <view class="price">￥<text>{{cell.currentPrice}}</text></view>
+        <view class="points">(<text>{{cell.uid}}</text>积分)</view>
+      </view>
+      <view class="list_two">
+      <view class="left">
+        <view class="title">{{cell.name}}</view>
+        <view class="summer">{{cell.detail}}</view>
+      </view>
+      <view class="right">
+        <image src="{{cell.imageUrl}}"></image>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>
+ 

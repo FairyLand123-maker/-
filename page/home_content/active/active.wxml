@@ -1,0 +1,32 @@
+<!-- jifen -->
+<view>
+  <view class="first"></view>
+  <view class="second">
+    <view class="mi">涨分秘籍</view>
+    <view class="content">
+      <text>1.购买1本图书，获得5积分。</text>
+      <text>2.卖出一本图书，获得10积分。</text>
+      <text>3.上传笔记资料，获得5积分。</text>
+      <text>4.积分可用于下载笔记资料。</text>
+    </view>
+  </view>
+  <view class="r">积分任务</view>
+  <view class="renwu">
+   
+    <view class="one">
+      <view class="icon iconfont icon-qiandao" style="margin-left: 13px;font-size: 24px;margin-right: 20px;color: #ed7d2c;"></view>
+      <view style="width: 40%;">今日签到</view>
+      <button>去签到</button>
+    </view>
+    <view class="one">
+      <view  class="icon iconfont icon-chenggong" style="margin-left: 13px;font-size: 24px;margin-right: 20px;color: #ed7d2c;"></view>
+      <view style="width: 40%;">成功出售商品</view>
+      <button>去看看</button>
+    </view>
+    <view class="one">
+      <view class="icon iconfont icon-shenfenzheng" style="margin-left: 13px;font-size: 24px;margin-right: 20px;color: #ed7d2c;"></view>
+      <view style="width: 40%;">补全身份信息</view>
+      <button>去补全</button>
+    </view>
+  </view>
+</view>

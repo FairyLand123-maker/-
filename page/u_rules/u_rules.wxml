@@ -1,0 +1,20 @@
+<!--page/component/rules/rule.wxml-->
+<view class="container">
+    <view class='about-wrap'>
+        <view class='title'>助梦图书</view>
+        <view class='content'>
+            图书置换平台
+        </view>
+        <view class="line"></view>
+        <view class="content">
+            <text>开发者：\n</text>
+            <text>前端：李凡、王莹\n</text>
+            <text>后端：李振、徐彬</text>
+        </view>
+        <view class="line"></view>
+        <view class="content">有任何使用问题欢迎到客服中心反馈</view>
+        <view class='content'>
+            衷心致谢这次所有开发人员
+        </view>
+    </view>
+</view>

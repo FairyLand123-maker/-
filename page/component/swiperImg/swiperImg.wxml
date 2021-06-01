@@ -1,0 +1,19 @@
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000">    
+   <block>     
+    <swiper-item>    
+      <image src="../../../images/book_image/banner.jpg" class="slide-image" mode="aspectFill"/>   
+    </swiper-item>    
+    <swiper-item>    
+      <image src="../../../images/book_image/banner.jpg" class="slide-image" mode="aspectFill"/>   
+    </swiper-item>    
+    <swiper-item>    
+      <image src="../../../images/book_image/banner.jpg" class="slide-image" mode="aspectFill"/>   
+    </swiper-item>    
+    <swiper-item>    
+      <image src="../../../images/book_image/banner.jpg" class="slide-image" mode="aspectFill"/>   
+    </swiper-item>    
+    <swiper-item>    
+      <image  src="../../../images/book_image/banner.jpg" class="slide-image" mode="aspectFill"/>   
+    </swiper-item>  
+  </block>    
+</swiper> 

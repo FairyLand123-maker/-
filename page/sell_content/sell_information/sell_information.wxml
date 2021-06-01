@@ -1,0 +1,156 @@
+<form method="POST" enctype="multipart/form-data">
+    <view class="base_infor">
+      <view class="base">基本信息</view>
+      <view class="book">
+      <text>书名</text>
+      <input type="text" placeholder="必填" placeholder-class="p" 
+      value='{{name}}' bindinput='formName'/>
+      </view>
+   
+      <view class="book">
+      <text>作者</text>
+      <input type="text" placeholder="必填" placeholder-class="p"
+      value='{{author}}' bindinput='formAuthor'/>
+      </view>
+      <view class="book">
+      <text>出版社</text>
+      <input type="text" placeholder="必填" placeholder-class="p"
+      value='{{press}}' bindinput='formPress'/>
+      </view>
+      <view class="book">
+      <text>品相</text>
+      <input type="text" placeholder="必填" placeholder-class="p"
+      value='{{appearence}}' bindinput='formAppearence'/>
+      </view>
+      <!-- <view class="book">
+      <text>商品类型</text> -->
+      <!-- <input type="text" placeholder="必填" placeholder-class="p"
+      value='{{categoryId}}' bindinput='formCategoryId'/> -->
+      <view class="book">
+        <text>商品类型</text>
+        <!-- 下拉框 -->
+        <view class='select_box'>
+      <view class='select' catchtap='selectTaps'>
+        <text class='select_text'>{{selectDatas[indexs]}}</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <view class='select_img {{shows&&"select_img_rotate"}}' >
+        <view class="icon iconfont icon-xia"></view>
+        </view>
+      </view>
+      <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
+      </view>
+
+      </view>
+    </view>
+      <view class="book" wx:if="{{one==true}}">
+        <text>{{selectDatas[indexs]}}</text>
+        <!-- 1子类下拉框 -->
+        <view class='select_box'>
+      <view class='select' catchtap='selectTaps_zilei'>
+        <text class='select_text'>{{selectDatas_zilei1[indexs1]}}</text>
+        <view class='select_img {{shows&&"select_img_rotate"}}' >
+        <view class="icon iconfont icon-xia"></view>
+        </view>
+      </view>
+      <view  wx:if="{{one==true}}" class='option_box' style='height:{{shows1?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs1==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas_zilei1}}' wx:key='that' data-index='{{index}}' wx:for-item="item1" catchtap='selectTaps_zilei_optionTaps'>{{item1}}</text>
+      </view>
+      </view>
+      </view>
+      <!-- 2 -->
+      <view class="book" wx:if="{{two==true}}">
+        <text>{{selectDatas[indexs]}}</text>
+        <!-- 2子类下拉框 -->
+        <view class='select_box'>
+      <view class='select' catchtap='selectTaps_zilei2'>
+        <text class='select_text'>{{selectDatas_zilei2[indexs2]}}</text>
+        <view class='select_img {{shows&&"select_img_rotate"}}' >
+        <view class="icon iconfont icon-xia"></view>
+        </view>
+      </view>
+      <view class='option_box' style='height:{{shows2?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs2==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas_zilei2}}' wx:key='this' data-index='{{index}}' wx:for-item="item2"  catchtap='selectTaps_zilei2_optionTaps'>{{item2}}</text>
+      </view>
+      </view>
+      </view>
+       <!-- 3-->
+       <view class="book" wx:if="{{three==true}}">
+        <text>{{selectDatas[indexs]}}</text>
+        <!-- 3子类下拉框 -->
+        <view class='select_box'>
+      <view class='select' catchtap='selectTaps_zilei3'>
+        <text class='select_text'>{{selectDatas_zilei2[indexs3]}}</text>
+        <view class='select_img {{shows&&"select_img_rotate"}}' >
+        <view class="icon iconfont icon-xia"></view>
+        </view>
+      </view>
+      <view class='option_box' style='height:{{shows3?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs3==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas_zilei3}}' wx:key='this' data-index='{{index}}' wx:for-item="item3"  catchtap='selectTaps_zilei3_optionTaps'>{{item3}}</text>
+      </view>
+      </view>
+      </view>
+      <!-- </view> -->
+    </view>
+    <view class="first" bindtap="add_img">
+      <view class="add_image">
+      <view class="title" >添加照片</view>
+     <view class="a">
+      <view class="icon iconfont icon-tianjia" style="font-size: 50px;color: #e2d9d2;margin-left: 15px;margin-bottom: 15px;margin-right: 53rpx;width:100%"></view>
+      <view wx:if="{{add==true}}" wx:for="{{image}}" class="i">
+        <image src="{{item}}"></image>
+      </view>
+     </view>
+    </view>
+    <view class="zhu">
+      <view class="content">注：个人笔记请上传预览照片,
+书籍请上传封面及内页预览照片</view>
+    </view>
+    </view>
+    <view class="first" bindtap="upLoadAction">
+      <view class="add_image">
+      <view class="title">上传文件</view>
+      <view class="a">
+        <view class="icon iconfont icon-tianjia" style="font-size: 50px;color: #e2d9d2;margin-left: 15px;margin-bottom: 15px;margin-right: 53rpx;"></view>
+      <view wx:if="{{add1==true}}" wx:for="{{note}}" class="i" style="width:40%">
+        <view class="icon iconfont icon-wenjian" style="font-size:22px;"></view>
+        <text style="font-size:26rpx;">{{item}}</text>
+      </view>
+    
+        
+      </view>
+      </view>
+      
+    </view>
+    <view class="zhu">
+      <view class="content">注：请将个人笔记打包为文件进行上传，书籍无需上传文件。
+      </view>
+    </view>
+    <view class="summer">
+      <view class="s">商品描述</view>
+      <textarea name="" id="" cols="30" rows="10" placeholder="请简要描述商品内容与个人推荐理由~" placeholder-style="font-size:12px;"
+      value='{{details}}' 
+      bindinput='formDetails'></textarea>
+    </view>
+    <view class="last" bindtap="but_data"
+    name="{{name}}"
+    data-name="{{name}}"
+    author="{{author}}"
+    data-author="{{author}}"
+    press="{{press}}"
+    data-press="{{press}}"
+    appearence="{{appearence}}"
+    data-appearence="{{appearence}}"
+    
+    data-categoryId="{{categoryId}}"
+   
+    data-bcategoryId="{{bcategoryId}}"
+    imgUrl="{{image}}"
+    data-imgUrl="{{image}}"
+    path="{{path}}"
+    data-path="{{path}}"
+    details="{{details}}"
+    data-details="{{details}}">
+     <button>出价</button>
+    </view>
+</form>

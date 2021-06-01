@@ -1,0 +1,56 @@
+.num,.pass{
+  display: block;
+    width: 80%;
+    height: 100rpx;
+    border-radius: 28rpx;
+    margin: auto;
+    margin-top: 92px;
+    text-indent: 1em;
+    line-height: 100rpx;
+    border: 1rpx solid gray;
+}
+.pass{
+  margin-top: 32px;
+}
+.guodu{
+  display: flex;
+    justify-content: space-around;
+    margin-top: 23rpx;
+    font-size: 12px;
+}
+.one{
+  color: gray;
+}
+button{
+  width: 64%;
+    height: 90rpx;
+    font-size: 16px;
+    line-height: 90rpx;
+    margin-top: 147rpx;
+    color: white;
+    background: #ed7d2c;
+}
+.last{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 424px;
+  left: 90px;
+  font-size: 32rpx;
+}
+.last text{
+  color: cornflowerblue;
+}
+.guodu{
+  width: 58px;
+    /* background: pink; */
+    height: 25px;
+    line-height: 23px;
+    /* margin-right: 0; */
+    /* display: flex; */
+    /* justify-content: end; */
+    float: right;
+    margin-right: 44px;
+    color: red;
+    font-size: 12px;
+}

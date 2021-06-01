@@ -1,0 +1,121 @@
+page{
+  width: 100%;
+}
+.top{
+  height: 200px;
+    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top2{
+  width: 30%;
+    border-radius: 10rpx;
+}
+.main image{
+  width: 100%;
+    height: 240rpx;
+}
+.main text{
+  text-align: center;
+    display: block;
+    font-size: 33rpx;
+    font-family: "楷体";
+    background: lightgray;
+}
+.main_bottom{
+  position: absolute;
+    background: white;
+    width: 33%;
+    height: 71rpx;
+    top: 391rpx;
+    box-shadow: lime;
+    border-radius: 12rpx 0 0 12rpx;
+}
+.main_bottom text{
+  display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #ed7d2c;
+    font-size: 45rpx;
+}
+.top1{
+  border-radius: 10rpx;
+  width: 30%;
+}
+.top1 .main{
+  position: absolute;
+    width: 96px;
+    height: 126px;
+    top: 41rpx;
+}
+.top1 .main image{
+  width: 100%;
+    height: 240rpx;
+}
+.top1 .main text{
+  text-align: center;
+    display: block;
+    font-size: 38rpx;
+    font-family: "楷体";
+    background: lightgray;
+    line-height: 67rpx;
+    margin-top: -12rpx;
+}
+.top1 .main_bottom{
+  position: absolute;
+    background: white;
+    width: 33%;
+    height: 108rpx;
+    top: 353rpx;
+    box-shadow: lime;
+    border-radius: 12rpx 12rpx 0 0rpx;
+    left: 257rpx;
+}
+.top1 .main_bottom text{
+  display: block;
+  text-align: center;
+  line-height: 42px;
+  color: #ed7d2c;
+  font-size: 45rpx;
+}
+.top3{
+  width: 30%;
+  border-radius: 10rpx;
+}
+.top3 .main image{
+  width: 100%;
+    height: 240rpx;
+}
+.top3 .main text{
+  text-align: center;
+  display: block;
+  font-size: 33rpx;
+  font-family: "楷体";
+  background: lightgray;
+  margin-top: -6rpx;
+}
+.top3 .main_bottom{
+  margin-top: 47rpx;
+  position: absolute;
+  background: white;
+  width: 33%;
+  height: 71rpx;
+  top: 343rpx;
+  box-shadow: lime;
+  border-radius: 0 12rpx 12rpx 0;
+  right: 17rpx;
+}
+.top3 .main_bottom text{
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  color: #ed7d2c;
+  font-size: 45rpx;
+}
+.content{
+  display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+}

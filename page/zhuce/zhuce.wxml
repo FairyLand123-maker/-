@@ -1,0 +1,21 @@
+<view>
+  <view class="first">注册</view>
+  <input class="num" type="number" placeholder="手机号" value='{{telphone}}'  bindinput='formTel'/>
+  <view class="yan">
+    <input  placeholder="验证码" value='{{code}}'  bindinput='forcode'/>
+    <!-- <button
+    class="{{codeFlag==true?'getCode':'activeCode'}}"
+    style="margin-top:3px;margin-left:15rpx;width: 60%;"
+    catchtap="getCode">{{codeTxt}}</button> -->
+   
+    <view class="img">
+      <image src="{{imgUrl}}" title="点击刷新验证码"></image>
+ 
+    </view>
+  </view>
+  <input  class="pass" type="password" placeholder="设置密码" value='{{password}}'  bindinput='formPass'/>
+  <button class="agree" bindtap="to_home">同意协议并注册</button>
+  <view class="last">
+    <view>已注册账号?<text bindtap="todelu">去登录</text></view>
+  </view>
+</view>

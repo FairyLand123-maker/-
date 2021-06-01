@@ -1,0 +1,7 @@
+/* page/component/book_clear/book_clear.wxss */
+.v1{
+  height: 151px;
+  line-height: 189px;
+  margin-left: 15rpx;
+  color: #ec7d2c;
+}

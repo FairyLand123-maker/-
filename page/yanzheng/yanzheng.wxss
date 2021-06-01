@@ -1,0 +1,33 @@
+/* page/student_check/check.wxss */
+.container{
+  height: 100%;
+  margin-left: 30rpx;
+}
+form{  
+  width: 90%;
+  margin: auto;
+  margin-top: -137rpx;
+  /* border: 1px solid #ccc;   */
+}  
+.section text{
+  font-weight: bold;
+} 
+input{
+  margin-top: 20rpx;  
+  border: 1px solid #ccc;  
+  height:100rpx;  
+}  
+.section {
+  margin-bottom: 20px;
+}
+.section1{
+  display: flex;
+  /* width: 90%; */
+  margin: auto;
+  justify-content: space-aroun
+}
+
+.btn{
+  width: 45%;
+  margin-bottom: 20rpx;
+}

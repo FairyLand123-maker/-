@@ -1,0 +1,58 @@
+page{
+  background: #edf1f2;
+}
+.first{
+  height: 60rpx;
+  border-radius: 17rpx;
+  background: lightgray;
+}
+.right_nav{
+  white-space: nowrap;
+}
+.leftTab-items{
+  display: inline-block;
+  margin: 11rpx;
+  font-size: 34rpx;
+  font-family: "楷体";
+}
+.nav{
+  background: ghostwhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30rpx;
+    margin: 11rpx 10rpx 30rpx 10rpx;
+    border-radius: 20rpx;
+}
+.navtwo,.navthree,.navfour{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 31%;
+}
+.leftTab-selectedItem{
+  display: inline-block;
+  color: #de7d2c;
+  font-family: "楷体";
+  font-size: 37rpx;
+}
+.leftTab-items{
+  display: inline-block;
+}
+.navfour{
+  width:27%;
+}
+.price_img{
+  font-size: 47rpx;
+  display: flex;
+    justify-content: space-between;
+    width: 52%;
+}
+.iconfont {
+  font-size: 13px;
+}
+checkbox{
+  height: 70rpx;
+  line-height: 70rpx;
+  transform: scale(0.8);
+}

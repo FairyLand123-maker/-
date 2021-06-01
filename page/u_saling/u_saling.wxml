@@ -1,0 +1,38 @@
+<view class="outer">
+
+<view class="inner">
+  <scroll-view class="scroll" wx:for="{{sellList}}" wx:key="index">
+
+    <view class="item" bindtap="gotoDetail" bindlongtap="dele" data-id="{{item.id}}">
+      <view class="left">
+        <image src='{{item.imageUrl}}' class="img"></image>
+      </view>
+      <view class="right">
+        <view class="right_top">
+          <view>
+            <text class="text1">{{item.name}}</text>
+          </view>
+          <view>
+            <text class="text2">{{item.author}}
+</text>
+          </view>
+        <!-- <block wx:if="{{item.exchangeable==1}}">
+        <view class="ex">可交换</view>
+        </block> -->
+        </view>
+        <view class="right_bottom">
+          <view class="right_bottom_left">
+            <text style="color:red;font-size:40rpx;">￥{{item.originPrice}}</text>
+          </view>
+          <view class="right_bottom_right">
+            <text style="color:#8e8e8e;font-size:28rpx;">{{item.press}}</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+  </scroll-view>
+</view>
+
+</view>

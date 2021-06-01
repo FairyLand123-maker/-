@@ -1,0 +1,53 @@
+.first{
+  height: 14px;
+    background: #de7d2c;
+    border-radius: 0 0 32rpx 32rpx;
+}
+.second{
+  width: 85%;
+    margin: auto;
+    background: antiquewhite;
+    margin-top: 69rpx;
+    /* height: 304rpx; */
+    border-radius: 23rpx;
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+    padding-bottom: 25rpx;
+    margin-bottom: 41rpx;
+}
+.r{
+  text-align: center;
+  margin-top: 76rpx;
+  width: 85%;
+  margin: auto;
+  margin-top: 76rpx;
+}
+.mi{
+  text-align: center;
+    font-size: 16px;
+}
+.content text{
+  display: block;
+  font-size: 13px;
+  margin: 12rpx;
+}
+.renwu{
+  width: 90%;
+  margin: auto;
+  background: white;
+  margin-top: 12px;
+  border-radius: 20rpx;
+}
+.one{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .one button{
+    width: 30%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 16px;
+  }

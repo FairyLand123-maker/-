@@ -1,0 +1,151 @@
+.top{
+  width: 90%;
+  margin: auto;
+  height: 135rpx;
+  border-radius: 45rpx;
+  margin-top: 44rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border:2rpx solid #ccc;
+}
+.user_img{
+border-radius: 50%;
+}
+.user_img image{
+width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin-top: 16rpx;
+  margin-left: 23rpx;
+}
+.user_img .name{
+height: 50rpx;
+width: 107rpx;
+}
+.main{
+display: flex;
+  height: 100rpx;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  color: #ec7d2c;
+}
+.price{
+font-size: 22px;
+font-weight: bold;
+}
+.support{
+font-size: 31rpx;
+}
+.i{
+width: 90%;
+  margin: auto;
+  margin-top: 27rpx;
+}
+.i image{
+width: 150px;
+  height: 170px;
+  border-radius: 20rpx;
+}
+.infor{
+width: 90%;
+background: lightgray;
+  margin: auto;
+  height: 150rpx;
+  margin-top: 10rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #ccc;
+}
+.write,.oldnew{
+height: 50%;
+  margin-left: 155rpx;
+}
+.summer{
+width: 90%;
+margin: auto;
+/* background: orange; */
+height: 290rpx;
+margin-top: 20rpx;
+}
+.title{
+color: #ec7d2c;
+}
+.item_summer{
+height: 90%;
+background: lightgray;
+border: 2rpx solid #ccc;
+text-indent: 2em;
+display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-indent: 2em;
+}
+.each{
+width: 90%;
+  height: 80px;
+  /* background: burlywood; */
+  margin: auto;
+  margin-top: 45rpx;
+}
+.save{
+height: 90%;
+  background: lightgray;
+  margin-top: 10rpx;
+  display: flex;
+  border: 2rpx solid #ccc;
+  justify-content: space-around;
+  align-items: center;
+}
+.sa image{
+width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin-top: 16rpx;
+  margin-left: 23rpx;
+}
+.ve{
+display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.ve input{
+width: 350rpx;
+  height: 82rpx;
+  text-align: center;
+  border-radius: 20rpx 0 0 20rpx;
+  line-height: 82rpx;
+  background-color: whitesmoke;
+}
+.ve button{
+height: 82rpx;
+  border-radius: 0 20rpx 20rpx 0;
+  text-align: center;
+  line-height: 82rpx;
+  font-size: 36rpx;
+  color: #ec7d2c;
+}
+.footer{
+display: flex;
+  justify-content: space-around;
+  /* width: 90%; */
+  margin: auto;
+  background: #de7d2c;
+  margin-top: 119rpx;
+  align-items: center;
+  height: 55px;
+}
+.want,.wait{
+width: 17%;
+margin: 0 0 0 20rpx;
+}
+.footer button{
+  width: 25%;
+  line-height: 38px;
+  height: 90rpx;
+  font-size: 32rpx;
+  text-align: center;
+}

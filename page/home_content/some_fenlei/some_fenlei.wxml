@@ -1,0 +1,116 @@
+<view>
+<view>
+  <view class="first" >
+    <scroll-view
+    class="right_nav"
+    scroll-x="true"
+    style="height:40px"
+    scroll-with-animation
+    scroll-into-view="{{cateid}}">
+    <view>
+      <view wx:if="{{(page-1)==0|| type1 == true}}">
+          <view 
+          class="{{'cate'+index}}"
+          wx:for="{{one0}}"
+          class="leftTab-{{index == child_id-1 ?'selectedItem':'items'}}"
+          wx:key="index"
+          data-index="{{index}}"
+          bindtap="tosomeone">{{item.title}}</view>
+      </view>
+      <view   wx:if="{{(page-1)==1|| type2 == true}}">
+          <view  
+          class="{{'cate'+index}}"
+          wx:for="{{one1}}"    
+          class="leftTab-{{index == child_id-17 ?'selectedItem':'items'}}"
+          wx:key="index"
+          wx:for-item="nextindex"
+          data-index="{{index}}"
+          bindtap="tosomeone2">{{nextindex.title}}</view>
+        </view>
+        <view wx:if="{{(page-1)==2 || type3 == true}}">
+          <view 
+          class="{{'cate'+index}}"
+          wx:for="{{one2}}"
+          class="leftTab-{{index == child_id-27 ?'selectedItem':'items'}}"
+          wx:key="index"
+          wx:for-item="iindex"
+          data-index="{{index}}"
+          bindtap="tosomeone3" >{{iindex.title}}</view>
+        </view>
+    </view>
+
+
+  </scroll-view> 
+</view>
+
+
+
+
+</view>
+ 
+  
+  <view class="nav">
+    <view  
+    class="leftTab-{{open0 == true ?'selectedItem':'items'}}" bindtap="origin">默认</view>
+    <view class="navtwo">
+      <view 
+      class="leftTab-{{open1 == true || open2==true ?'selectedItem':'items'}}">价格</view>
+      <view class="price_img">
+        <view class="icon iconfont icon-shang" style="height:25rpx" bindtap="shang_price"></view>
+        <view class="icon iconfont icon-shang" style=" transform: rotate(180deg);"
+        bindtap="xia_price"></view>
+      </view>
+    </view>
+    <view class="navfour">
+      <view class="navsupport">支持自提</view>
+      <view>
+        <checkbox></checkbox>
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+    
+    <book wx:if="{{open1==false}}"
+    page="{{page}}" 
+    child_id="{{child_id}}"
+    type="{{type}}"
+    mainindex="{{mainindex}}"
+
+    one="{{one}}"
+    data-one="{{one}}"
+    
+    one1="{{one1}}"
+    one2="{{one2}}"
+    list="{{list}}"
+    data-page="{{page}}"
+    data-child_id="{{child_id}}"
+    data-findex="{{findex}}"
+    bindtap="to_details"
+    bindmyevent="b_m"></book>
+    
+    <book_shang wx:if="{{open1==true}}"
+    page="{{page}}" 
+    child_id="{{child_id}}"
+    type="{{type}}"
+    mainindex="{{mainindex}}"
+    one0="{{one0}}"
+    one1="{{one1}}"
+    one2="{{one2}}"
+    one="{{one}}"
+    list="{{list}}"
+    cateItems="{{cateItems}}"
+    >
+    </book_shang>
+    <book_xia wx:if="{{open2==true}}"
+    page="{{page}}" 
+    child_id="{{child_id}}"
+    type="{{type}}"
+    mainindex="{{mainindex}}"
+    one="{{one}}"
+    list="{{list}}"
+    cateItems="{{cateItems}}"
+    >
+    </book_xia>
+  </view>
+</view>

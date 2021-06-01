@@ -1,0 +1,75 @@
+<!-- 全部分类 -->
+<!--主盒子-->
+<view class="all_search">
+<!-- <view class="search_btn">
+ <view class="icon iconfont icon-sousuo"></view>  <input type="text" placeholder="请输入搜索信息" placeholder-style="font-size:22rpx;"
+  value='{{search_name}}'  
+  bindinput='forSearchId'
+  confirm-type="search"/>    
+  <view  bindtap='ss' class="icon iconfont icon-sousuo" data-flag="{{one}}"></view> 
+</view> --> 
+<view class="search" style="position:relative;height:{{windowHeight -46}}px;overflow:hidden">
+  <!--左侧导航栏 -->
+  <view class="cateLeft">
+    <scroll-view
+          scroll-y="true"
+          class="scroll_left"
+          scroll-with-animation="true"
+          show-scrollbar="false"
+          enhanced="true" 
+          enable-back-to-top="true"
+          scroll-top="{{scrollTop}}">           
+          <view
+            wx:for="{{leftList}}"
+            wx:key="index"
+            data-index="{{index}}"
+            bindtap="menuTab"
+            class="leftTab-{{index == current ?'selectedItem':'items'}}">
+            {{item.title}} 
+    </view>
+  </scroll-view>
+  </view>
+  <!--右侧商品 -->
+ <view class="cateRight">
+  <scroll-view
+          scroll-y="true"
+          class="scroll_right"
+          scroll-with-animation
+          bindscroll="rightScroll"
+          scroll-into-view="{{cateid}}">
+    <view 
+      class="right_class" 
+      wx:for="{{leftList}}"
+      wx:key="index"
+      data-index="{{index}}"
+      id="cate{{item.id}}">
+      <view class="{{'cate'+index}}" 
+            bindtap="tosome_index" 
+            data-type="{{index+1}}"
+            data-mainindex="{{index}}">
+        --<text>{{item.title}}</text>--
+      </view>
+      <view class="cateRigtList">
+        <view class="cateRightItem"
+        wx:for="{{rightList}}"
+        wx:for-item="cell" 
+        wx:for-index="cellindex"
+        wx:key="cellindex"
+        wx:if="{{cell.categoryId==index+1}}">
+        <!-- <navigator class="nav" 
+        url="../some_fenlei/some_fenlei?page={{cell.categoryId}}&child_id={{cell.id}}&mainindex={{cell.id-1}}">
+          <view class="category_name">{{cell.title}}</view>
+        </navigator> -->
+        <view class="nav" bindtap="nav_to_some"  
+        data-page="{{cell.categoryId}}"
+        data-child_id="{{cell.id}}"
+        data-mainindex="{{cellindex}}">        
+          <view class="category_name">{{cell.title}}</view>
+      </view>
+      </view>
+      </view>
+    </view>
+  </scroll-view>
+ </view>
+</view>
+</view>

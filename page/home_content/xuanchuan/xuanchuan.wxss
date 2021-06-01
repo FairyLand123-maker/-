@@ -1,0 +1,36 @@
+.name{
+  text-align: center;
+    height: 44px;
+    /* background: pink; */
+    line-height: 40px;
+}
+.content{
+  width: 90%;
+    background: gainsboro;
+    margin: auto;
+    height: 300px;
+    border-radius: 20rpx;
+    margin-bottom: 25px;
+    padding-top: 57rpx;
+    padding: 52rpx 10rpx 0rpx 20rpx
+}
+.one,.second,.three{
+  display: flex;
+  height: 28%;
+  border-bottom: 1rpx solid gray;
+  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.three{
+  border: none;
+}
+button{
+  width: 85%;
+  margin: auto;
+  background: #de7d2c;
+  color: white;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+}

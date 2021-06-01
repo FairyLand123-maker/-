@@ -1,0 +1,90 @@
+<view class="main">
+    <view class="header">
+       <view wx:if="{{add==true}}" >
+        <image src="{{infor.avatar}}" class="thumb"></image>
+      </view>
+      <view wx:if="{{add==false}}" >
+        <image src="../../images/bar/my.png" class="thumb"></image> 
+      </view>
+      <view wx:if="{{add1==true}}" >
+        <text class="nickname">{{infor.nickname}}</text>
+      </view>
+      <view wx:if="{{add1==false}}">
+        <text class="nickname">助梦用户</text>
+      </view>
+        <view class="about" bindtap="yanzheng">
+            学生认证
+        </view>
+    </view>
+    <view class="btn-container">
+        <view class='icon-wrap'>
+            <!-- class='icon iconfont icon-order' -->
+            <view >
+                <image class='order-icon' src='/images/saling.png'>
+                </image>
+            </view>
+            <view class="order-txt">
+                <navigator url="/page/u_saling/u_saling">我的在售</navigator>
+            </view>
+        </view>
+        <view class='icon-wrap'>
+            <view class='order-icon-wrap' >
+                <image class='order-icon' src='/images/saled.png'> 
+                </image>
+                <view wx:if="{{status.toPay > 0 }}" class='red-point'>{{status.toPay}}</view>
+            </view>
+            <view class="order-txt">
+                <navigator url="/page/u_saled/u_saled">我的已售</navigator>
+            </view>
+        </view>
+
+        <view class='icon-wrap'>
+            <!-- class='icon iconfont icon-jifen' -->
+            <view>
+                <image class='order-icon' src='/images/icon/wodejifen.png'>
+                </image>
+                <view wx:if="{{status.toPay > 0 }}" class='red-point'>{{status.toPay}}</view>
+            </view>
+            <view class="order-txt">
+                <navigator url="../my-core/core">我的积分</navigator>
+            </view>
+        </view>
+            <view class='icon-wrap'>
+                <!-- class='icon iconfont icon-xiangyao' -->
+                <view >
+                <image class='order-icon' src='/images/want.png'>
+                </image>
+                <view wx:if="{{status.toPay > 0 }}" class='red-point'>{{status.toPay}}</view>
+            </view>
+            <view class="order-txt">
+                <navigator url="../cart/cart">我的想要</navigator>
+            </view>
+        </view>
+    </view>
+    <view class="address-box">
+        <view class="address-manage">
+            <navigator url="../u_address/u_address">收货地址</navigator>
+        </view>
+    </view>
+    <view class="information">
+        <view class="personal">
+            <navigator url="../u_infor/u_infor">个人信息</navigator>
+        </view>
+    </view>
+    <view class="orders-box">
+        <view class="orders">
+            <navigator url="../u_orderlist/u_orderlist">我的订单</navigator>
+        </view>
+    </view>
+    <view class="rule-box">
+        <view class="rules">
+            <navigator url="../u_rules/u_rules">平台规则</navigator>
+        </view>
+    </view>
+    <button class="contact-btn" session-from='{"nickName":"{{userInfo.nickname}}","avatarUrl":"{{userInfo.avatar}}"}' open-type="contact">
+            <view class="center-box">
+                <view class="center">客服中心</view>
+            </view>
+            <view class="arrow"></view>
+    </button>
+</view>

@@ -1,0 +1,66 @@
+<view>
+  <view class="top">
+    <view class="top2"  
+    bindtap="to_details2"
+    bindmyevent="b_m"
+    data-findex="{{findex}}"
+>
+      <view class="main">
+        <image src="{{one[1].imageUrl}}"></image>
+      <text>{{one[1].name}}</text>
+      </view>
+      <view class="main_bottom">
+        <text>Top2</text>
+      </view>
+    </view>
+    <view class="top1"
+    bindtap="to_details1"
+    bindmyevent="b_m"
+    data-findex="{{findex}}">    
+      <view class="main">
+        <image src="{{one[0].imageUrl}}"></image>
+      <text>{{one[0].name}}</text>
+      </view>
+      <view class="main_bottom">
+        <text>Top1</text>
+      </view>
+    </view>
+    <view class="top3" bindtap="to_details3"
+    bindmyevent="b_m"
+    data-findex="{{findex}}"
+    >
+      <view class="main">
+        <image src="{{one[2].imageUrl}}"></image>
+      <text>{{one[2].name}}</text>
+      </view>
+      <view class="main_bottom">
+        <text>Top3</text>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="content">
+    <book_clear 
+    one4_2="{{now_l}}"></book_clear>
+    <book 
+    bindtap="to_details"
+    bindmyevent="b_m"
+    data-findex="{{findex}}"
+
+   
+    one="{{one}}"
+    data-one="{{one}}"
+    one1="{{one1}}"
+    one2="{{one2}}"
+    list="{{list}}"
+    data-page="{{page}}"
+    data-child_id="{{child_id}}"
+    page="{{page}}" 
+    type="{{type}}"
+    data-main_in="{{main_in}}"
+    data-one="{{onw_l}}"
+    one="{{now_l}}"
+    ></book>
+  </view>
+  </view>
+</view>

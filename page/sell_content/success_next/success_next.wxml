@@ -1,0 +1,8 @@
+<view>
+  <view class="status">发布成功</view>
+  <view class="img">
+    <image src="{{image}}"></image>
+  </view>
+ <button bindtap="content">继续出售</button>
+ <button bindtap="to_home">返回主页</button>
+</view>

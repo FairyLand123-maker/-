@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":10,
+  "usingComponents": {
+    "swiperImg":"../component/swiperImg/swiperImg",
+    "note":"../component/note/note"
+  }
+}

@@ -1,0 +1,20 @@
+<view>
+    <book 
+    one="{{one}}"
+    data-one="{{one}}"
+    child_id="{{child_id}}"
+    type="{{type}}"
+    page="{{page}}" 
+    mainindex="{{mainindex}}"
+    one="{{one}}"
+    data-one="{{one}}"
+    one1="{{one1}}"
+    one2="{{one2}}"
+    list="{{list}}"
+    data-page="{{page}}"
+    data-child_id="{{child_id}}"
+    data-findex="{{findex}}"
+    bindtap="to_details"
+    bindmyevent="b_m"></book>
+
+</view>

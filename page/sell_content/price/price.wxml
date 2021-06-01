@@ -1,0 +1,24 @@
+<view class="first">
+<view class="book">
+  <view class="left" wx:for="{{image}}">
+    <image  src="{{item}}"></image>
+  </view>
+  <view class="right">
+    <view class="name">{{name}}</view>
+    <view class="summer">{{details}}</view>
+    <view class="newold">{{appearence}}</view>
+  </view>
+</view>
+<view class="price">
+ <view>￥</view>
+ <view style="color:gray;">
+   <input type="number"  value='{{price}}' bindinput='formPrice' />
+ </view>
+</view>
+<view class="support">
+  <checkbox>支持自提</checkbox>
+</view>
+<view class="btu" bindtap="success_next" data-imgUrl="{{imgUrl}}">
+  <button>发布</button>
+</view>
+</view>

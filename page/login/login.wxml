@@ -1,0 +1,13 @@
+<view>
+  <input class="num" type="number" placeholder="手机号/邮箱" value='{{telphone}}'  bindinput='formName'/>
+  <input  class="pass" type="password" placeholder="密码" value='{{password}}' bindinput='formPass'/>
+  <view class="guodu">
+   <!-- <view class="one">忘记密码</view>
+   <view class="two">验证码登陆</view> -->
+   <text bindtap="tozhuce"class="two">去注册</text>
+  </view>
+  <button bindtap="tohome">登录</button>
+  <view class="last">
+    <!-- <view>还没有账号?<text bindtap="tozhuce">去注册</text></view> -->
+  </view>
+</view>

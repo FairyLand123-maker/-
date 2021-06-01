@@ -1,0 +1,33 @@
+.status{
+  text-align: center;
+    height: 150rpx;
+    /* background: cadetblue; */
+    margin: auto;
+    line-height: 150rpx;
+    font-size: 19px;
+    color: gray;
+    font-weight: bold;
+}
+.img{
+  width: 360rpx;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 38rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid gray;
+}
+.img image{
+  width: 101%;
+  height: 100%;
+  border-radius: 26rpx;
+}
+button{
+  width: 70%;
+  margin: 20rpx auto;
+  background: #de7d2c;
+  color: white;
+  margin-top: 84rpx;
+  font-size: 15px;
+  height: 39px;
+  line-height: 39p;
+}

@@ -1,0 +1,56 @@
+<view>
+  <view
+      wx:for="{{one}}"
+      wx:key="index"
+      data-index="{{index}}">
+    <view  wx:if="{{index==findex}}">
+  <view class="top">
+    <view class="user_img">
+      <image src="{{item.imageUrl}}"></image>
+    </view>
+    <view class="name">{{item.name}}</view>
+    <view class="icon iconfont icon-renzheng"></view>
+    <view>学生认证</view>
+  </view>
+
+  <view class="main">
+    <view class="price">
+      ￥{{item.currentPrice}}
+    </view>
+    <view class="support">支持自提</view>
+  </view>
+  <view class="i">
+    <image src="{{item.imageUrl}}"></image>
+  </view>
+  <view class="infor">
+    <view class="write">作者： {{item.author}}</view>
+    <view class="oldnew">新旧： {{item.appearance}}</view>
+  </view>
+
+  <view class="summer">
+    <view class="title">商品详情</view>
+    <view class="item_summer">
+      {{item.detail}}
+    </view>
+  </view>
+
+  <view class="each">
+    <view class="title">互动</view>
+    <view class="save">
+      <view class="sa">
+        <image src="../../../images/bar/我的.png"></image>
+      </view>
+      <view class="ve">
+        <input type="text" placeholder="问问更多细节吧~"/>
+        <button>留言</button>
+      </view>
+    </view>
+   
+  </view>
+  <view class="footer">
+      <button>聊一聊</button>
+      <button>马上买</button>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,45 @@
+<!--page/student_check/check.wxml-->
+<view class='container'> 
+  <form bindsubmit='formSubmit' bindreset='formReset'>  
+    <view class='section'>  
+       <text>姓名：</text>  
+       <input type="string"
+       placeholder='请输入姓名'
+       bindinput='form_userName'
+            value="{{userName}}"></input>  
+    </view>  
+    <view class='section'>  
+       <text>学号：</text>  
+       <input type="string" 
+       placeholder='请输入学号'
+       bindinput='form_sno'
+            value="{{sno}}"></input>  
+    </view>  
+    <view class='section'>  
+       <text>学校：</text>  
+       <input type="string"
+        placeholder='请输入学校'
+        bindinput='form_school'
+            value="{{school}}"></input>  
+    </view>  
+    <view class='section'>  
+      <text>学院：</text>  
+      <input type='string'
+      placeholder='请输入学院'
+        bindinput='form_faculty'
+            value="{{faculty}}"
+      ></input>  
+    </view>  
+   <view class='section1'>  
+     <button type='primary' form-type='submit' class="btn" 
+     isStudent="{{isStudent}}"
+     data-isStudent="{{isStudent}}"
+     nickname="{{nickname}}"
+     data-nickname="{{nickname}}" 
+     email="{{email}}"
+     data-email="{{email}}" 
+     >确认</button>  
+     <button type='primary' form-type='reset' class="btn">重置</button> 
+   </view> 
+  </form>  
+</view>

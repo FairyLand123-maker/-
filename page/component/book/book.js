@@ -1,0 +1,40 @@
+// components/book/book.js
+Component({
+  properties:{
+    page:{
+      type:Number,
+      value:''
+    },
+    child_id:{
+      type:Number,
+      value:''
+    },
+    type:{
+      type:Number,
+      value:''
+    },
+    page:{
+      type:Number,
+      value:''
+    },
+    mainindex:{
+      type:Number,
+      value:''
+    },
+    one:{
+      type:Array,
+      value:[]
+    },
+    one4_2:{
+      type:Array,
+      value:[]
+    }
+  },
+  methods:{
+    handleTap(e){
+      let {index}=e.currentTarget.dataset;
+      this.triggerEvent('myevent',{index})
+    }
+
+  }
+})

@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":10,
+  "usingComponents": {
+    "book":"../../component/book/book"
+  }
+}

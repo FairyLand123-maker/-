@@ -1,0 +1,43 @@
+<!--page/u_saled/u_saled.wxml-->
+<view class="outer">
+
+<view class="inner">
+  <scroll-view class="scroll" wx:for="{{sellList}}" wx:key="index">
+
+    <view class="item" >
+      <view class="left" bindtap="gotoDetail" data-id="{{item.thingsId}}">
+        <image src='{{item.imageUrl}}' class="img"></image>
+      </view>
+      <view class="right">
+        <view class="right_top">
+          <view class="right_top_name">
+            <view class="right_top_name_outer">
+              <text class="text1">{{item.name}}</text>
+            </view>
+            <view class="complain" wx:if="{{item.sign===1}}" bindtap="complain" data-thingid="{{item.thingsId}}">申诉</view>
+
+            <view class="complain" wx:if="{{item.sign===2}}" >已申诉</view>
+          </view>
+          
+          <view style="">
+            <text class="text2">{{item.press}}</text>
+          </view>
+
+        </view>
+        <view class="right_bottom">
+          <view class="right_bottom_left">
+            <text wx:if="{{item.thingToThingId !=null}}" style="color:#7a7a7a;font-size:35rpx;">物物交换</text>
+            <text wx:else style="color:#7a7a7a;font-size:35rpx;">￥{{item.currentPrice}}</text>
+          </view>
+          <view class="right_bottom_right">
+            <text style="color:#8e8e8e;font-size:28rpx;">{{item.originPrice}}</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+  </scroll-view>
+</view>
+
+</view>

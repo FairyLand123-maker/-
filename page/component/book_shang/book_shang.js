@@ -1,0 +1,37 @@
+// components/book/book.js
+Component({
+  properties:{
+    page:{
+      type:Number,
+      value:''
+    },
+    child_id:{
+      type:Number,
+      value:''
+    },
+    type:{
+      type:Number,
+      value:''
+    },
+    mainindex:{
+      type:Number,
+      value:''
+    },
+    one0:{
+      type:Array,
+      value:[]
+    },
+    one1:{
+      type:Array,
+      value:[]
+    },
+    one2:{
+      type:Array,
+      value:[]
+    },
+    list:{
+      type:Array,
+      value:[]
+    }
+  }
+})
